@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- EDIT: Page Title & SEO Meta -->
+  <title>FORMA STUDIO — Creative Branding &amp; Identity Agency</title>
+  <meta name="description" content="Independent creative branding agency crafting bold visual identities, tactile packaging, and expressive digital systems." />
+
+  <!-- Google Fonts: Space Grotesk, Instrument Serif & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Neo-Brutalist Header -->
+  <header class="brutal-header" id="top">
+    <div class="container brutal-nav-row">
+      <!-- EDIT: Studio Name -->
+      <a href="#top" class="studio-logo">FORMA<span class="logo-dot">®</span></a>
+
+      <nav class="studio-nav" aria-label="Main navigation">
+        <a href="#work">Selected Work</a>
+        <a href="#process">Process</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#voices">Voices</a>
+      </nav>
+
+      <div class="studio-actions">
+        <a href="#brief" class="brutal-btn brutal-btn-yellow brutal-btn-sm">Start a Project</a>
+        <button class="studio-menu-btn" id="studioMenuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="studioMobileNav">Menu +</button>
+      </div>
+    </div>
+
+    <div class="studio-mobile-nav" id="studioMobileNav" hidden>
+      <a href="#work">Selected Work</a>
+      <a href="#process">Process</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#voices">Voices</a>
+      <a href="#brief" class="brutal-btn brutal-btn-yellow">Start a Project</a>
+    </div>
+
+    <!-- Running Marquee Strip -->
+    <div class="marquee-bar" aria-hidden="true">
+      <div class="marquee-track">
+        <span>BRAND IDENTITY</span><span>&bull;</span>
+        <span>PACKAGING SYSTEMS</span><span>&bull;</span>
+        <span>ART DIRECTION</span><span>&bull;</span>
+        <span>DIGITAL FLAGSHIPS</span><span>&bull;</span>
+        <span>VERBAL POSITIONING</span><span>&bull;</span>
+        <span>BRAND IDENTITY</span><span>&bull;</span>
+        <span>PACKAGING SYSTEMS</span><span>&bull;</span>
+        <span>ART DIRECTION</span><span>&bull;</span>
+        <span>DIGITAL FLAGSHIPS</span><span>&bull;</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Avant-Garde Typographic Hero -->
+    <section class="brutal-hero">
+      <div class="container hero-box">
+        <div class="hero-top-meta">
+          <span class="sticker-badge">BOOKING Q2 / Q3</span>
+          <span class="studio-coords">BROOKLYN &bull; COPENHAGEN &bull; REMOTE</span>
+        </div>
+
+        <!-- EDIT: Display Hero Headline -->
+        <h1>We build brands that <em>refuse</em> to blend in.</h1>
+
+        <div class="hero-bottom-grid">
+          <p class="hero-intro">
+            Forma Studio is an independent creative branding agency turning challenger startups and cultural founders into unmistakable visual icons—across packaging, print, and the web.
+          </p>
+          <div class="hero-cta-cluster">
+            <a href="#work" class="brutal-btn brutal-btn-ink">View Portfolio &darr;</a>
+            <a href="#brief" class="brutal-btn brutal-btn-vermilion">Book Discovery</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Filterable Portfolio Grid -->
+    <section class="brutal-section" id="work">
+      <div class="container">
+        <div class="work-header">
+          <div>
+            <span class="tag-pill tag-cobalt">01 / SELECTED ARCHIVE</span>
+            <h2>Tactile craft meets bold digital form.</h2>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="filter-bar" role="group" aria-label="Filter portfolio projects by category">
+            <button type="button" class="filter-btn is-active" data-filter="all">All (03)</button>
+            <button type="button" class="filter-btn" data-filter="packaging">Packaging</button>
+            <button type="button" class="filter-btn" data-filter="identity">Print &amp; Identity</button>
+            <button type="button" class="filter-btn" data-filter="digital">Digital</button>
+          </div>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card" data-category="packaging">
+            <div class="work-media">
+              <!-- EDIT: Replace packaging image inside assets/ -->
+              <img src="assets/portfolio-packaging.jpg" alt="Sculptural terracotta and matte cream botanical packaging design on stone podiums" width="800" height="620" />
+              <span class="work-badge">PACKAGING</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-title-row">
+                <h3>Terrene Apothecary</h3>
+                <span>2026</span>
+              </div>
+              <p>Tactile stoneware vessels, custom emboss hierarchy, and warm earth color architecture for a refillable botanical line.</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-category="identity">
+            <div class="work-media">
+              <!-- EDIT: Replace editorial stationery image inside assets/ -->
+              <img src="assets/portfolio-editorial.jpg" alt="Debossed cotton stationery cards, cobalt folder, and studio material swatches" width="800" height="620" />
+              <span class="work-badge badge-cobalt">PRINT &amp; IDENTITY</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-title-row">
+                <h3>Kova Architectural Press</h3>
+                <span>2026</span>
+              </div>
+              <p>Modular monograph grid, cobalt foil stationery suite, and custom typographic specimen system.</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-category="digital">
+            <div class="work-media">
+              <!-- EDIT: Replace digital showcase image inside assets/ -->
+              <img src="assets/portfolio-digital.jpg" alt="Studio monitor displaying bold vermilion and black brutalist web layout" width="800" height="620" />
+              <span class="work-badge badge-yellow">DIGITAL</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-title-row">
+                <h3>Monolith Sound Lab</h3>
+                <span>2025</span>
+              </div>
+              <p>Expressive digital flagship, interactive audio release calendar, and design system built for velocity.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4-Card Process Grid -->
+    <section class="brutal-section brutal-yellow-band" id="process">
+      <div class="container">
+        <div class="section-intro">
+          <span class="tag-pill tag-ink">02 / STUDIO METHOD</span>
+          <h2>Sharp thinking before a single pixel moves.</h2>
+        </div>
+
+        <div class="method-grid">
+          <article class="method-card">
+            <span class="method-num">01</span>
+            <h3>Cultural Audit</h3>
+            <p>We map category clichés so your brand occupies the exact visual territory competitors ignore.</p>
+          </article>
+          <article class="method-card">
+            <span class="method-num">02</span>
+            <h3>Verbal &amp; Visual Spine</h3>
+            <p>Sharp positioning manifesto, tone rules, and two contrasting creative directions to choose from.</p>
+          </article>
+          <article class="method-card">
+            <span class="method-num">03</span>
+            <h3>System Craft</h3>
+            <p>Logo suite, typography scale, packaging dielines, motion cues, and bespoke digital templates.</p>
+          </article>
+          <article class="method-card">
+            <span class="method-num">04</span>
+            <h3>Launch Guidelines</h3>
+            <p>Turnkey Figma libraries, print-ready production files, and brand book so your team ships effortlessly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities Split Accordion -->
+    <section class="brutal-section" id="capabilities">
+      <div class="container cap-split">
+        <div class="cap-left">
+          <span class="tag-pill tag-vermilion">03 / CAPABILITIES</span>
+          <h2>Full-spectrum brand direction under one roof.</h2>
+          <p>Click any discipline to inspect deliverables and typical sprint timelines.</p>
+          <div class="studio-stat-box">
+            <strong>6–10 Weeks</strong>
+            <span>Typical Identity-to-Launch Sprint</span>
+          </div>
+        </div>
+
+        <div class="cap-accordion">
+          <article class="cap-item">
+            <button class="cap-trigger" type="button" aria-expanded="true">
+              <span>Brand Strategy &amp; Naming</span>
+              <span class="cap-plus">+</span>
+            </button>
+            <div class="cap-body">
+              <p>Category whitespace mapping, brand positioning architecture, naming exploration, tagline systems, and founder messaging playbooks. (2–3 Weeks)</p>
+            </div>
+          </article>
+
+          <article class="cap-item">
+            <button class="cap-trigger" type="button" aria-expanded="false">
+              <span>Visual Identity &amp; Typography</span>
+              <span class="cap-plus">+</span>
+            </button>
+            <div class="cap-body" hidden>
+              <p>Primary &amp; secondary marks, bespoke wordmarks, color systems, art direction moodboards, iconography, and interactive brand guidelines. (4 Weeks)</p>
+            </div>
+          </article>
+
+          <article class="cap-item">
+            <button class="cap-trigger" type="button" aria-expanded="false">
+              <span>Packaging &amp; Tactile Print</span>
+              <span class="cap-plus">+</span>
+            </button>
+            <div class="cap-body" hidden>
+              <p>Structural unboxing concepts, print-ready dielines, paper/foil specification, and campaign photography direction. (3–5 Weeks)</p>
+            </div>
+          </article>
+
+          <article class="cap-item">
+            <button class="cap-trigger" type="button" aria-expanded="false">
+              <span>Digital Flagships &amp; Launch Sites</span>
+              <span class="cap-plus">+</span>
+            </button>
+            <div class="cap-body" hidden>
+              <p>Conversion-ready editorial landing pages, interactive lookbooks, and responsive front-end builds. (3–4 Weeks)</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sample Client Voices -->
+    <section class="brutal-section brutal-ink-band" id="voices">
+      <div class="container">
+        <span class="tag-pill tag-yellow">04 / COLLABORATOR VOICES (SAMPLE PLACEHOLDERS)</span>
+        <div class="voices-grid">
+          <blockquote class="voice-card">
+            <p>“Forma gave our botanical line an unmistakable shelf presence—buyers recognize our boxes across the room before reading a word.”</p>
+            <footer>— Maya Lin, Sample Founder Placeholder</footer>
+          </blockquote>
+          <blockquote class="voice-card">
+            <p>“Zero agency fluff. Every workshop pushed our positioning sharper, and the Figma system scaled across 40+ launch assets.”</p>
+            <footer>— Henrik Lindqvist, Sample Creative Lead Placeholder</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bold Project Brief Form -->
+    <section class="brutal-section brutal-vermilion-band" id="brief">
+      <div class="container brief-grid">
+        <div class="brief-copy">
+          <span class="tag-pill tag-ink">05 / START A CONVERSATION</span>
+          <h2>Ready to build something impossible to ignore?</h2>
+          <p>Tell us about your launch window and what makes your brand tick. We reply within 24 hours with availability and sprint pricing.</p>
+        </div>
+
+        <!--
+          FORM INTEGRATION GUIDE:
+          Static HTML validation runs in Demo Mode. Connect Formspree, Basin, or Netlify Forms
+          by updating the form action attribute (details in README.md).
+        -->
+        <form class="brutal-form" id="studioForm" action="#" method="POST" novalidate>
+          <div class="brutal-field">
+            <label for="clientName">Name &amp; Brand *</label>
+            <input type="text" id="clientName" name="name" placeholder="Samira Patel — Northbeam" required />
+          </div>
+          <div class="brutal-field">
+            <label for="clientEmail">Email *</label>
+            <input type="email" id="clientEmail" name="email" placeholder="samira@northbeam.co" required />
+          </div>
+          <div class="brutal-field">
+            <label for="projectScope">Primary Scope</label>
+            <select id="projectScope" name="scope">
+              <option value="Full Brand Identity">Full Brand Identity</option>
+              <option value="Packaging + Identity">Packaging + Identity</option>
+              <option value="Digital Flagship Website">Digital Flagship Website</option>
+              <option value="Art Direction Sprint">Art Direction Sprint</option>
+            </select>
+          </div>
+          <div class="brutal-field">
+            <label for="projectNotes">Tell Us About Your Brand *</label>
+            <textarea id="projectNotes" name="message" rows="3" placeholder="Timeline, goals, and links..." required></textarea>
+          </div>
+          <button type="submit" class="brutal-btn brutal-btn-ink brutal-btn-full">Send Studio Brief &rarr;</button>
+          <p class="brutal-feedback" id="studioFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="brutal-footer">
+    <div class="container brutal-footer-grid">
+      <div>
+        <strong class="studio-logo">FORMA<span>®</span></strong>
+        <p>Independent Creative Branding Agency.</p>
+      </div>
+      <div class="brutal-footer-links">
+        <a href="#work">Archive</a>
+        <a href="#process">Method</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#brief">Brief</a>
+      </div>
+      <div class="brutal-footer-right">
+        <p>&copy; <span id="studioYear">2026</span> Forma Studio. All rights reserved.</p>
+        <p class="brutal-credit">Website Template by PixelNestByNS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
